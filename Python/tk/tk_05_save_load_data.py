@@ -25,7 +25,7 @@ class Plane(Vehicle):
     def __init__(self, name, max_speed, engines, wheels=4):
         self.__name = name
         self.__engines = engines
-        self.__wheels = wheels
+        self.wheels = wheels
         self.__max_speed = max_speed
 
     @property
@@ -35,7 +35,7 @@ class Plane(Vehicle):
     @property
     def max_speed(self):
         return self.__max_speed
-
+'''
     @property
     def wheels(self):
         return self.__wheels
@@ -49,17 +49,18 @@ class Plane(Vehicle):
                 raise ValueError(f"{num_wheels} is too many wheels")
             case _:
                 self.wheels = num_wheels
-
-
+'''
+current_index = 0
 def save(data : int):
-    # write to file
+    with open("tempdata.txt", "w") as t:
+        t.write(str(current_index))
     print("Data was saved")
 
 
-def load(filename : str):
-    data = 0
-    # read data
-    return data
+def load():
+    with open("tempdata.txt", "r") as t:
+        data = t.read(str(current_index))
+    return int(data)
 
 class VehicleInfo:
     def __init__(self, vehicle_list):
@@ -77,14 +78,14 @@ class VehicleInfo:
         btn.grid(column=1, row=1)
 
         # This is where its loaded
-        self.txt.selection_set(1)
+        self.txt.selection_set(load())
 
         self.window.mainloop()
 
     def clicked(self):
         # this gets saved
         current_index = self.txt.curselection()[0]
-
+        save(current_index)
         selected_v_str = self.txt.get(self.txt.curselection())
         vehicle_obj = None
         for i in range(len(vehicle_list)):
