@@ -78,20 +78,25 @@ class Vehicle:
         self.__name = name
 
 
+# Vehicle.static_method()
+
 """
 Inheritence, you can inherit from another class
 """
 
 
 class Car(Vehicle):
+    N_WHEELS = 4
 
     def __init__(self, name):
+        super().__init__(self.N_WHEELS, name)
+        """
         self.__n_wheels = 4
         self.__name = name
-
+        
     def set_name(self, name):
         self.__name = name
-
+"""
     # def set_n_wheels(self, n_wheels):
     #    raise ValueError("Number of wheels need to be 4 on a car, cannot change")
     set_n_wheels = property(doc='(!) Disallowed inherited: Car wheels need to be 4')
