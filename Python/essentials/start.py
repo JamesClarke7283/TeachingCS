@@ -9,7 +9,7 @@ name
 """
 
 
-arr = ["A" ,"B", "C"]
+arr = ["A", "B", "C"]
 
 r = range(len(arr))
 
@@ -17,7 +17,7 @@ print("Indexes", list(r))
 print("Values", arr)
 
 z = zip(range(len(arr)), arr)
-print("Using Zip:",list(z))
+print("Using Zip:", list(z))
 print("Enumerate:", list(enumerate(arr)))
 
 """
