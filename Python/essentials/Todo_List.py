@@ -46,6 +46,10 @@ def menu_opt(opt_select, todos):
 
 
 def main():
+    """Runs the application
+
+    :return:
+    """
     todos = ["Hi", "Bye", "Waddup", "Nice"]
 
     while True:
