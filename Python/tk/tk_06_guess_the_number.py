@@ -1,4 +1,4 @@
-from tkinter import Tk, ttk
+from tkinter import Tk, ttk, HORIZONTAL
 import logging
 from os import environ as os_environ
 import random
@@ -17,35 +17,41 @@ def comp_incorrect(guess, answer):
     elif guess < answer:
         return "too low"
 
+
 class GTN_UI:
+    RANGE_START = 1
+    RANGE_END = 20
+    LIVES = 6
+
+    def scale_moved(self, scale_inp):
+        """Triggers when the scale bar is moved, changes the label to value selected"""
+        self.scale_value = round(float(scale_inp))
+        logging.debug(f"Value of scale is {self.scale_value}")
+        self.scale_lbl.configure(text=str(self.scale_value))
 
     def display_out(self, text, colour):
+        """Displays text out on the screen"""
         self.number_lbl.configure(text=text, foreground=colour)
 
-    def submited(self):
-        usr_input = self.inp_txt.get()
+    def submitted(self):
+        """Triggers when user presses submit button"""
+        usr_input = self.scale_value
         logging.info(f"Submitting Input: {usr_input}")
-        if self.tries == 0:
+        if self.tries <= 0:
             self.display_out("Ran out of attempts, game over!", "red")
-
-        if usr_input.isnumeric():
-            if int(usr_input) == self.answer:
-                self.display_out("Correct!!", "green")
-            else:
-                filler = comp_incorrect(int(usr_input), self.answer)
-                self.display_out(f"Incorrect,{filler}, Try again ({self.tries} lives left)", "yellow")
-                self.tries -= 1
-
-            logging.info("Number is Numeric, submit answer")
+        elif int(usr_input) == self.answer:
+            self.display_out("Correct!!", "green")
         else:
-            self.display_out("ERROR: text must be a number", "red")
-
+            filler = comp_incorrect(int(usr_input), self.answer)
+            self.display_out(f"Incorrect, {filler}, Try again ({self.tries} lives left)", "yellow")
+            self.tries -= 1
 
     def __init__(self):
-        self.answer = random.randint(1, 20)
-        self.tries = 6
+        self.scale_value = 0
+        self.answer = random.randint(self.RANGE_START, self.RANGE_END)
+        self.tries = self.LIVES
         self.window = Tk()
-        self.window.title("Guess the number (Guess Between 1-20)")
+        self.window.title(f"Guess the number (Guess Between {self.RANGE_START}-{self.RANGE_END})")
         self.window.geometry('450x200')
 
         # Top
@@ -57,13 +63,25 @@ class GTN_UI:
         self.input_frm = ttk.Frame(self.window)
         self.input_frm.pack(side="bottom", expand=1)
 
-        self.inp_txt = ttk.Entry(self.input_frm)
-        self.inp_txt.pack(side="top")
-
-        self.submit_btn = ttk.Button(self.input_frm, text="Submit", command=self.submited)
+        self.submit_btn = ttk.Button(self.input_frm, text="Submit", command=self.submitted)
         self.submit_btn.pack(side="bottom")
 
+        # Scale Frame
+
+        self.scale_frm = ttk.Frame(self.input_frm)
+        self.scale_frm.pack(side="bottom")
+
+        self.scale_lbl = ttk.Label(self.scale_frm, text="0")
+        self.scale_lbl.pack(side="top")
+
+        self.inp_scl = ttk.Scale(self.scale_frm, orient=HORIZONTAL, length=200,
+                                 from_=self.RANGE_START, to=self.RANGE_END,
+                                 command=self.scale_moved)
+
+        self.inp_scl.pack(side="bottom")
+
         self.window.mainloop()
+
 
 if __name__ == "__main__":
     gtn = GTN_UI()
