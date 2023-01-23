@@ -1,5 +1,5 @@
 class HashMap:
-    def __init__(self, size):
+    def __init__(self, size: int):
         self.size = size
         self._hash_lst = [None for i in range(self.size)]
 

@@ -2,7 +2,7 @@ import argparse
 
 from datetime import datetime, timedelta, timezone
 
-parser = argparse.ArgumentParser(description="Get the current time and other info")
+parser = argparse.ArgumentParser(description='Get the current time and other info')
 
 parser.add_argument('--get-time',
                     help='Get current time', action='store_true')
@@ -23,6 +23,7 @@ if args.get_time:
         dt = datetime.now(tz)
     else:
         dt = datetime.now()
+        print(dt)
 
 if args.set_date:
     int_list = list(map(int, args.set_date))
@@ -30,4 +31,5 @@ if args.set_date:
     dt = datetime(*int_list)
     print(dt)
 
-print(args.set_date)
+
+#print(args.set_date)
