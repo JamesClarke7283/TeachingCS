@@ -28,13 +28,14 @@ if args.sub:
     answer = args.sub[0] - sum(subtract_set)
 if args.mul:
     prev_num = 0
-    for index in range(0, len(args.mul), 2):
-        if index >= 1:
-            answer += prev_num * args.mul[index]
-        prev_num = args.mul[index]
+    for index in range(0, len(args.mul)):
+        if index == 0:
+            answer = args.mul[0]
+        elif index > 0:
+            answer *= args.mul[index]
 
 # Check if answer is whole number, if so, set answer to integer
 if answer % 1 == 0:
     answer = int(answer)
 print(answer)
-print("DEBUG:",args)
+print("DEBUG:", args)
