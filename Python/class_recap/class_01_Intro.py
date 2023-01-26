@@ -90,16 +90,10 @@ class Car(Vehicle):
 
     def __init__(self, name):
         super().__init__(self.N_WHEELS, name)
-        """
-        self.__n_wheels = 4
-        self.__name = name
-        
-    def set_name(self, name):
-        self.__name = name
-"""
-    # def set_n_wheels(self, n_wheels):
-    #    raise ValueError("Number of wheels need to be 4 on a car, cannot change")
-    set_n_wheels = property(doc='(!) Disallowed inherited: Car wheels need to be 4')
+
+    def set_n_wheels(self, n_wheels):
+        raise Exception("Number of wheels on a car needs to be 4");
+    # set_n_wheels = property(doc='(!) Disallowed inherited: Car wheels need to be 4')
 
 
 car = Vehicle(4, "Car")
@@ -108,7 +102,7 @@ print(f"You have {car.get_n_wheels()} wheels on your Car, oops, better fix that"
 
 
 nissan = Car("Nissan Leaf")
-#nissan.set_n_wheels(3)
+# nissan.set_n_wheels(3)
 # print(nissan.get_n_wheels())
 nissan.static_method()
 nissan.set_n = "bob"
