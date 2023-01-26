@@ -33,6 +33,13 @@ if args.mul:
             answer = args.mul[0]
         elif index > 0:
             answer *= args.mul[index]
+if args.div:
+    prev_num = 0
+    for index in range(0, len(args.div)):
+        if index == 0:
+            answer = args.div[0]
+        elif index > 0:
+            answer /= args.div[index]
 
 # Check if answer is whole number, if so, set answer to integer
 if answer % 1 == 0:
