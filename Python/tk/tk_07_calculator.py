@@ -44,9 +44,20 @@ def btn_9_clicked():
     current_text = result_lbl['text']
     result_lbl.config(text=current_text+"9")
 
+def btn_add_clicked():
+    pass
+
+def btn_sub_clicked():
+    pass
+
+def btn_mul_clicked():
+    pass
+
+def btn_div_clicked():
+    pass
 
 btn_0 = Button(number_pad, text="0", command=btn_0_clicked)
-btn_0.grid(column=1, row=4)
+btn_0.grid(column=1, row=3)
 
 btn_1 = Button(number_pad, text="1", command=btn_1_clicked)
 btn_1.grid(column=1, row=2)
@@ -74,6 +85,19 @@ btn_8.grid(column=2, row=0)
 
 btn_9 = Button(number_pad, text="9", command=btn_9_clicked)
 btn_9.grid(column=3, row=0)
+
+btn_add = Button(number_pad, text="+", command=btn_add_clicked)
+btn_add.grid(column=4, row=0)
+
+btn_sub = Button(number_pad, text="-", command=btn_sub_clicked)
+btn_sub.grid(column=4, row=1)
+
+btn_mul = Button(number_pad, text="*", command=btn_mul_clicked)
+btn_mul.grid(column=4, row=2)
+
+btn_div = Button(number_pad, text="/", command=btn_div_clicked)
+btn_div.grid(column=4, row=3)
+
 
 
 window.mainloop()
