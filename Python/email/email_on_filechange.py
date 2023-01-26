@@ -1,6 +1,7 @@
 import hashlib
+import smtplib
+import ssl
 import time
-import smtplib, ssl
 
 context = ssl.create_default_context()
 
