@@ -56,6 +56,12 @@ def btn_mul_clicked():
 def btn_div_clicked():
     pass
 
+def btn_eq_clicked():
+    pass
+
+def btn_del_clicked():
+    pass
+
 btn_0 = Button(number_pad, text="0", command=btn_0_clicked)
 btn_0.grid(column=1, row=3)
 
@@ -98,6 +104,10 @@ btn_mul.grid(column=4, row=2)
 btn_div = Button(number_pad, text="/", command=btn_div_clicked)
 btn_div.grid(column=4, row=3)
 
+btn_eq = Button(number_pad, text="=", command=btn_eq_clicked)
+btn_eq.grid(column=3, row=3)
 
+btn_del = Button(number_pad, text="<x]", command=btn_del_clicked)
+btn_del.grid(column=2, row=3)
 
 window.mainloop()
