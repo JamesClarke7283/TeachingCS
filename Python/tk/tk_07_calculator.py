@@ -111,7 +111,6 @@ def btn_clear_clicked():
     result_lbl.config(text="")
     pass
 
-
 def btn_calc_clicked():
     global op
     global accumulator
@@ -127,7 +126,6 @@ def btn_calc_clicked():
         case Operation.DIV:
             result = accumulator / second_accumulator
     result_lbl.config(text=str(result))
-
 
 btn_0 = Button(number_pad, text="0", command=btn_0_clicked)
 btn_0.grid(column=1, row=3)
@@ -176,5 +174,6 @@ btn_clear.grid(column=2, row=3)
 
 btn_calc = Button(number_pad, text="=", command=btn_calc_clicked)
 btn_calc.grid(column=3, row=3)
+
 
 window.mainloop()
