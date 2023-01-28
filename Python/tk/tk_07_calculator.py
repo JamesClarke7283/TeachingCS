@@ -25,6 +25,7 @@ number_pad.pack(side="bottom")
 accumulator = 0
 op = Operation
 
+
 def btn_0_clicked():
     current_text = result_lbl['text']
     result_lbl.config(text=current_text+"0")
@@ -109,7 +110,7 @@ def btn_div_clicked():
 
 def btn_clear_clicked():
     result_lbl.config(text="")
-    pass
+
 
 def btn_calc_clicked():
     global op
@@ -126,6 +127,7 @@ def btn_calc_clicked():
         case Operation.DIV:
             result = accumulator / second_accumulator
     result_lbl.config(text=str(result))
+
 
 btn_0 = Button(number_pad, text="0", command=btn_0_clicked)
 btn_0.grid(column=1, row=3)
