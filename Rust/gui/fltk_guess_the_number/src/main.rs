@@ -11,13 +11,12 @@ fn main() {
 
     let mut secret_number = &rand::random::<u32>() % 20;
 
-    /* 
+    
     new_game.set_callback(move |_| {
         secret_number = rand::random::<u32>() % 100;
         input.set_value("0");
         message.set_label("");
     });
-    */
     
     
      
