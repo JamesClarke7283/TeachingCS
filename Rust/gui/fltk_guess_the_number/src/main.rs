@@ -10,7 +10,7 @@ fn main() {
     let mut submit = Button::new(180, 130, 80, 30, "Submit");
     let mut new_game = Button::new(120, 170, 150, 30, "New Game");
     const MAX_NUMBER: u32 = 20;
-    let mut secret_number = *&mut rand::random::<u32>() % MAX_NUMBER;
+    let mut secret_number = rand::random::<u32>() % MAX_NUMBER;
     {
         let mut input = input.clone();
         let mut message = message.clone();
