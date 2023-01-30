@@ -68,56 +68,33 @@ def btn_calc_clicked():
 NUMBER_BTN_X = 40
 NUMBER_BTN_Y = 20
 
-btn_0 = Button(number_pad, text="0", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("0"))
-btn_0.grid(column=1, row=3)
+number_buttons = [
+ Button(number_pad, text=str(i), padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda x=i: number_btn_clicked(str(x)))
+ for i in range(10)
+]
 
-btn_1 = Button(number_pad, text="1", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("1"))
-btn_1.grid(column=1, row=2)
-
-btn_2 = Button(number_pad, text="2", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("2"))
-btn_2.grid(column=2, row=2)
-
-btn_3 = Button(number_pad, text="3", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("3"))
-btn_3.grid(column=3, row=2)
-
-btn_4 = Button(number_pad, text="4", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("4"))
-btn_4.grid(column=1, row=1)
-
-btn_5 = Button(number_pad, text="5", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("5"))
-btn_5.grid(column=2, row=1)
-
-btn_6 = Button(number_pad, text="6", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("6"))
-btn_6.grid(column=3, row=1)
-
-btn_7 = Button(number_pad, text="7", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("7"))
-btn_7.grid(column=1, row=0)
-
-btn_8 = Button(number_pad, text="8", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("8"))
-btn_8.grid(column=2, row=0)
-
-btn_9 = Button(number_pad, text="9", padx=NUMBER_BTN_X, pady=NUMBER_BTN_Y, command=lambda: number_btn_clicked("9"))
-btn_9.grid(column=3, row=0)
+for i, button in enumerate(number_buttons[::-1]):
+    button.grid(row=0 + (i // 3), column=(i % 3))
 
 CALC_BTN_X = 39
 CALC_BTN_Y = 20
 
 btn_add = Button(number_pad, text="+", padx=CALC_BTN_X, pady=CALC_BTN_Y, command=lambda: op_btn_clicked(Operation.ADD))
-btn_add.grid(column=4, row=0)
+btn_add.grid(column=3, row=0)
 
 btn_sub = Button(number_pad, text="-", padx=CALC_BTN_X, pady=CALC_BTN_Y, command=lambda: op_btn_clicked(Operation.SUB))
-btn_sub.grid(column=4, row=1)
+btn_sub.grid(column=3, row=1)
 
 btn_mul = Button(number_pad, text="×", padx=CALC_BTN_X, pady=CALC_BTN_Y, command=lambda: op_btn_clicked(Operation.MUL))
-btn_mul.grid(column=4, row=2)
+btn_mul.grid(column=3, row=2)
 
 btn_div = Button(number_pad, text="÷", padx=CALC_BTN_X, pady=CALC_BTN_Y, command=lambda: op_btn_clicked(Operation.DIV))
-btn_div.grid(column=4, row=3)
+btn_div.grid(column=3, row=3)
 
 btn_clear = Button(number_pad, text="C", padx=CALC_BTN_X, pady=CALC_BTN_Y, command=btn_clear_clicked)
-btn_clear.grid(column=2, row=3)
+btn_clear.grid(column=1, row=3)
 
 btn_calc = Button(number_pad, text="=", padx=CALC_BTN_X, pady=CALC_BTN_Y, command=btn_calc_clicked)
-btn_calc.grid(column=3, row=3)
-
+btn_calc.grid(column=2, row=3)
 
 window.mainloop()
