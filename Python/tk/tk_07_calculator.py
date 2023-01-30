@@ -31,81 +31,17 @@ def btn_0_clicked():
     result_lbl.config(text=current_text+"0")
 
 
-def btn_1_clicked():
+def number_btn_clicked(number: str):
     current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"1")
+    result_lbl.config(text=current_text+number)
 
 
-def btn_2_clicked():
-    current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"2")
-
-
-def btn_3_clicked():
-    current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"3")
-
-
-def btn_4_clicked():
-    current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"4")
-
-
-def btn_5_clicked():
-    current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"5")
-
-
-def btn_6_clicked():
-    current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"6")
-
-
-def btn_7_clicked():
-    current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"7")
-
-
-def btn_8_clicked():
-    current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"8")
-
-
-def btn_9_clicked():
-    current_text = result_lbl['text']
-    result_lbl.config(text=current_text+"9")
-
-
-def btn_add_clicked():
+def op_btn_clicked(operation: Operation):
     global accumulator
     global op
     accumulator = int(result_lbl['text'])
     result_lbl.config(text="")
-    op = Operation.ADD
-
-
-def btn_sub_clicked():
-    global accumulator
-    global op
-    accumulator = int(result_lbl['text'])
-    result_lbl.config(text="")
-    op = Operation.SUB
-
-
-def btn_mul_clicked():
-    global accumulator
-    global op
-    accumulator = int(result_lbl['text'])
-    result_lbl.config(text="")
-    op = Operation.MUL
-
-
-def btn_div_clicked():
-    global accumulator
-    global op
-    accumulator = int(result_lbl['text'])
-    result_lbl.config(text="")
-    op = Operation.DIV
+    op = operation
 
 
 def btn_clear_clicked():
@@ -129,46 +65,46 @@ def btn_calc_clicked():
     result_lbl.config(text=str(result))
 
 
-btn_0 = Button(number_pad, text="0", command=btn_0_clicked)
+btn_0 = Button(number_pad, text="0", command=lambda: number_btn_clicked("0"))
 btn_0.grid(column=1, row=3)
 
-btn_1 = Button(number_pad, text="1", command=btn_1_clicked)
+btn_1 = Button(number_pad, text="1", command=lambda: number_btn_clicked("1"))
 btn_1.grid(column=1, row=2)
 
-btn_2 = Button(number_pad, text="2", command=btn_2_clicked)
+btn_2 = Button(number_pad, text="2", command=lambda: number_btn_clicked("2"))
 btn_2.grid(column=2, row=2)
 
-btn_3 = Button(number_pad, text="3", command=btn_3_clicked)
+btn_3 = Button(number_pad, text="3", command=lambda: number_btn_clicked("3"))
 btn_3.grid(column=3, row=2)
 
-btn_4 = Button(number_pad, text="4", command=btn_4_clicked)
+btn_4 = Button(number_pad, text="4", command=lambda: number_btn_clicked("4"))
 btn_4.grid(column=1, row=1)
 
-btn_5 = Button(number_pad, text="5", command=btn_5_clicked)
+btn_5 = Button(number_pad, text="5", command=lambda: number_btn_clicked("5"))
 btn_5.grid(column=2, row=1)
 
-btn_6 = Button(number_pad, text="6", command=btn_6_clicked)
+btn_6 = Button(number_pad, text="6", command=lambda: number_btn_clicked("6"))
 btn_6.grid(column=3, row=1)
 
-btn_7 = Button(number_pad, text="7", command=btn_7_clicked)
+btn_7 = Button(number_pad, text="7", command=lambda: number_btn_clicked("7"))
 btn_7.grid(column=1, row=0)
 
-btn_8 = Button(number_pad, text="8", command=btn_8_clicked)
+btn_8 = Button(number_pad, text="8", command=lambda: number_btn_clicked("8"))
 btn_8.grid(column=2, row=0)
 
-btn_9 = Button(number_pad, text="9", command=btn_9_clicked)
+btn_9 = Button(number_pad, text="9", command=lambda: number_btn_clicked("9"))
 btn_9.grid(column=3, row=0)
 
-btn_add = Button(number_pad, text="+", command=btn_add_clicked)
+btn_add = Button(number_pad, text="+", command=lambda: op_btn_clicked(Operation.ADD))
 btn_add.grid(column=4, row=0)
 
-btn_sub = Button(number_pad, text="-", command=btn_sub_clicked)
+btn_sub = Button(number_pad, text="-", command=lambda: op_btn_clicked(Operation.SUB))
 btn_sub.grid(column=4, row=1)
 
-btn_mul = Button(number_pad, text="*", command=btn_mul_clicked)
+btn_mul = Button(number_pad, text="×", command=lambda: op_btn_clicked(Operation.MUL))
 btn_mul.grid(column=4, row=2)
 
-btn_div = Button(number_pad, text="/", command=btn_div_clicked)
+btn_div = Button(number_pad, text="÷", command=lambda: op_btn_clicked(Operation.DIV))
 btn_div.grid(column=4, row=3)
 
 btn_clear = Button(number_pad, text="C", command=btn_clear_clicked)
