@@ -1,6 +1,13 @@
 """ Teaching about For Loops
 for ::=  "for" [single_element_name] "in" starred_list ":"
               [code here]
+
+Other useful methods covered:
+
+range - creates a list in range of numbers in (start, stop)
+enumerate - provides both the index and item of the number in format (index, item)
+zip - enables you to combine or zip lists together, age = [1,3] and name = ["Bob", "Mike"] becomes (1,"Bob"),(3, "Mike")
+
 """
 
 print("Example 1")
