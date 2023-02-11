@@ -27,7 +27,9 @@ for i in unfiltered_titles:
 
 # Loop through the video titles and get the game titles
 for i in video_titles:
+    # Removes the brackets and everything inside them
     video_title = i.split('(')[0].strip()
+    # Splits the string by the pipe character to get the game title
     video_title = video_title.split('|')
     if len(video_title) >= 2:
         game_titles.append(video_title[1])
