@@ -33,6 +33,10 @@ for count in range(1, 10):
     print(count)
 
 print("--------------------")
+# Iterating through a list by index
+for index in range(0, len(names)):
+    print(names[index])
+print("--------------------")
 
 # Example 3, using enumerate
 print("Example 3: Shopping List")

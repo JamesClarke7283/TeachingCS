@@ -7,19 +7,19 @@ root.title('Treeview demo')
 root.geometry('620x200')
 
 # define columns
-columns = ('first_name', 'last_name', 'email')
+columns = ('first_name', 'last_name', 'emails')
 
 tree = ttk.Treeview(root, columns=columns, show='headings')
 
 # define headings
 tree.heading('first_name', text='First Name')
 tree.heading('last_name', text='Last Name')
-tree.heading('email', text='Email')
+tree.heading('emails', text='Email')
 
 # generate sample data
 contacts = []
 for n in range(1, 100):
-    contacts.append((f'first {n}', f'last {n}', f'email{n}@example.com'))
+    contacts.append((f'first {n}', f'last {n}', f'emails{n}@example.com'))
 
 # add data to the treeview
 for contact in contacts:
