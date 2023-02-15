@@ -10,4 +10,26 @@ Step 3: Convert the numbers back to characters
 """
 
 message = "Hello Anon"
+key = 1
+msg_ord = []
+cipher_txt = ""
 
+
+def encrypt(key, msg):
+    cipher_txt = ""
+    for i in msg:
+        cipher_txt += chr(ord(i) + key)
+    return cipher_txt
+
+
+def decrypt(key, msg):
+    cipher_txt = ""
+    for i in msg:
+        cipher_txt += chr(ord(i) - key)
+    return cipher_txt
+
+
+cipher_txt = encrypt(1, "Hello Anon")
+print(cipher_txt)
+decrypted = decrypt(1, cipher_txt)
+print(decrypted)
