@@ -1,7 +1,9 @@
 /Python/.idea/
-/Python/__pycache
+/Python/__pycache__
+/Python/venv
 .idea
 __pycache__
 .projectile
 target
 Cargo.lock
+venv
