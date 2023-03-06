@@ -1,6 +1,7 @@
 """
 Step 1: Query Location https://openweathermap.org/find?q=[location]
 Step 2: Get Locations from Query
+
 """
 
 import requests
@@ -22,3 +23,6 @@ def get_locations(location):
 
 lst = get_locations("Texas")
 print(lst)
+
+for location in lst["list"]:
+    print(location["name"], str(location["main"]["temp"])+" Kelvin")
