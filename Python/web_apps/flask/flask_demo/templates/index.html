@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <h1>Flask Demo</h1>
+    <!-- Link to the about page -->
+    {% include 'menu.html' %}
+
+    <p>Here is a list of the most popular programming languages:</p>
+    <ul class="green-list">
+        {% for language in languages %}
+        <li class="green-list">{{ language }}</li>
+        {% endfor %}
+    </ul>
+</body>

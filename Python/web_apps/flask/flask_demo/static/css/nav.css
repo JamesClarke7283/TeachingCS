@@ -1,0 +1,17 @@
+.menu ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-item a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
