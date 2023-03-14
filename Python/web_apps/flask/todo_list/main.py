@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required
-from sqlalchemy import create_engine, Column, Integer, String, ForaignKey
+from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import sessionmaker, declarative_base, mapped_column, relationship
 from werkzeug.security import check_password_hash, generate_password_hash
 
@@ -16,7 +16,6 @@ Session = sessionmaker(bind=engine)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
-
 
 # Define User model
 class User(UserMixin, Base):
@@ -36,7 +35,7 @@ class Todo(Base):
     id = Column(Integer, primary_key=True)
     title = Column(String(50))
     description = Column(String(100))
-    user_id = Column(Integer)
+    user_id = Column(Integer, ForeignKey('users.id'))
 
     def __repr__(self):
         return f"<Todo(title='{self.title}', description='{self.description}')>"
@@ -55,7 +54,6 @@ def load_user(user_id):
 @app.route('/')
 def index():
     return render_template('index.html')
-
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -96,9 +94,10 @@ def register():
 @login_required
 def dashboard():
     session = Session()
-    current_user = session.query(User).filter_by(username=current_user.username).first()
-    todo_list = session.query(Todo).filter_by(user_id=current_user.id).all()
-    return render_template('dashboard.html')
+    user_id = session.query(User).filter_by(username=current_user.username).first().id
+    todo_list = session.query(Todo).filter_by(user_id=user_id).all()
+    session.close()
+    return render_template('dashboard.html', todos=todo_list)
 
 
 @app.route('/logout', methods=['GET', 'POST'])
@@ -108,6 +107,29 @@ def logout():
     flash('Logged out successfully.')
     return redirect(url_for('index'))
 
+@app.route('/add', methods=['GET', 'POST'])
+@login_required
+def add():
+    if request.method == 'POST':
+        session = Session()
+        id = session.query(User).filter_by(username=current_user.username).first().id
+        todo = Todo(title=request.form['title'], description="", user_id=id)
+        session.add(todo)
+        session.commit()
+        session.close()
+    return redirect(url_for('dashboard'))
+
+
+@app.route('/remove', methods=['GET', 'POST'])
+@login_required
+def delete():
+    id = request.args.get('id')
+    session = Session()
+    todo = session.query(Todo).filter_by(id=id).first()
+    session.delete(todo)
+    session.commit()
+    session.close()
+    return redirect(url_for('dashboard'))
 
 if __name__ == '__main__':
     app.run(debug=True)
