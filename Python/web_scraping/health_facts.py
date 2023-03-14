@@ -19,4 +19,18 @@ video_titles = []
 for i in unfiltered_titles:
     video_titles.append(i.text)
 
-print(video_titles)
+group = ["weight", "health", "diet", "exercise", "fitness", "nutrition"]
+exclude_group = ["?", "review", "reviewing", "reviewed"]
+
+filtered_titles = []
+for title in video_titles:
+    for keyword in group:
+        if keyword.lower() in title.lower():
+            count_matches = 0
+            for exclude_keyword in exclude_group:
+                    if exclude_keyword.lower() not in title.lower():
+                        count_matches += 1
+                    if count_matches == len(exclude_group):
+                        filtered_titles.append(title)
+                
+print(filtered_titles)
