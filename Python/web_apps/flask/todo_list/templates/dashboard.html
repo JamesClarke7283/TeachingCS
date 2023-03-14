@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    {% include "menu.html"%}
+    <h1>Dashboard</h1>
+    <h2>Logged in as {{ username }}</h2>
+    <h3>Todo List</h3>
+    <ul>
+        {% for todo in todos %}
+        <li>{{ todo }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/add" method="post">
+        <label for="todo">Add Todo</label>
+        <input type="text" name="todo" id="todo">
+        <input type="submit" value="Add">
+    </form>
+    <form action="/logout" method="post">
+        <input type="submit" value="Logout">
+    </form>
+</body>
+
+</html>

@@ -2,3 +2,5 @@ Flask
 BeautifulSoup4
 requests
 SQLalchemy
+flask-login
+flask-sqlalchemy
