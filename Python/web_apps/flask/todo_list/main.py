@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.orm import sessionmaker, declarative_base
+from sqlalchemy import create_engine, Column, Integer, String, ForaignKey
+from sqlalchemy.orm import sessionmaker, declarative_base, mapped_column, relationship
 from werkzeug.security import check_password_hash, generate_password_hash
 
 Base = declarative_base()
@@ -29,6 +29,17 @@ class User(UserMixin, Base):
     def __repr__(self):
         return f"<User(username='{self.username}')>"
 
+
+class Todo(Base):
+    __tablename__ = 'todos'
+
+    id = Column(Integer, primary_key=True)
+    title = Column(String(50))
+    description = Column(String(100))
+    user_id = Column(Integer)
+
+    def __repr__(self):
+        return f"<Todo(title='{self.title}', description='{self.description}')>"
 
 Base.metadata.create_all(engine)
 
@@ -84,6 +95,9 @@ def register():
 @app.route('/dashboard')
 @login_required
 def dashboard():
+    session = Session()
+    current_user = session.query(User).filter_by(username=current_user.username).first()
+    todo_list = session.query(Todo).filter_by(user_id=current_user.id).all()
     return render_template('dashboard.html')
 
 
