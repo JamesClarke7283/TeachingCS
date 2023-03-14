@@ -17,7 +17,7 @@ class Vehicle:
     @n_wheels.setter
     def n_wheels(self, n_wheels):
         match n_wheels:
-            case n_wheels if n_wheels <= self.MIN_WHEELS:
+            case n_wheels if n_wheels < self.MIN_WHEELS:
                 raise ValueError(f"Cannot have less than {self.MIN_WHEELS} wheel")
             case n_wheels if n_wheels > self.MAX_WHEELS:
                 raise ValueError(f"You Cannot have vehicles with {self.MAX_WHEELS} or more wheels")
@@ -30,3 +30,5 @@ class Vehicle:
 
 
 c = Vehicle(4, "Car")
+c.n_wheels = 1
+print(c.n_wheels)

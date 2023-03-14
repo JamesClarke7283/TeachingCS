@@ -66,7 +66,6 @@ class Vehicle:
          therefor we don't need to parse self,
          its ISOLATED from the rest of the class """
         print("dddd")
-        pass
 
     def get_name(self):
         return self.__name
@@ -92,7 +91,7 @@ class Car(Vehicle):
         super().__init__(self.N_WHEELS, name)
 
     def set_n_wheels(self, n_wheels):
-        raise Exception("Number of wheels on a car needs to be 4");
+        raise Exception("Number of wheels on a car needs to be 4")
     # set_n_wheels = property(doc='(!) Disallowed inherited: Car wheels need to be 4')
 
 
@@ -105,5 +104,5 @@ nissan = Car("Nissan Leaf")
 # nissan.set_n_wheels(3)
 # print(nissan.get_n_wheels())
 nissan.static_method()
-nissan.set_n = "bob"
+nissan.name = "bob"
 print(nissan.get_name())
