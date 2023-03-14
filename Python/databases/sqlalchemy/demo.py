@@ -39,6 +39,7 @@ def get_id_by_email(email):
     session.close()
     return user.id
 
+
 def add_user(name, age, email):
     """Adds new users to the database
     We first create a session object, which will be used to interact with the database.
@@ -98,7 +99,7 @@ if args.add:
     add_user(*args.add)
 
 if args.update:
-    id = int(args.update[0])
+    email_address = args.update[0]
     updates = args.update[1:]
     name = age = email = None
     for update in updates:
@@ -109,10 +110,10 @@ if args.update:
             age = int(value)
         elif key == 'email':
             email = value
-    update_user(id, name=name, age=age, email=email)
+    update_user(email_address, name=name, age=age, email=email)
 
 if args.delete:
-    delete_user(int(args.delete[0]))
+    delete_user(args.delete[0])
 
 if args.list:
     session = Session()
