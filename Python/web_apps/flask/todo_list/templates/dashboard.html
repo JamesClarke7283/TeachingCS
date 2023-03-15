@@ -6,6 +6,7 @@
     <title>Dashboard</title>
     {% include "libraries.html" %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
 </head>
 
 <body>
@@ -13,6 +14,9 @@
     <h1>Dashboard</h1>
     <h2>Logged in as <i>{{ current_user.username }}</i></h2>
     <h3>Todo List</h3>
+    {% include "edit_modal.html" %}
+
+
     <table class="table">
         <thead>
             <tr>
@@ -29,44 +33,26 @@
                 </th>
                 <td>{{todo.description}}</td>
                 <td>
+                    <button class="btn btn-primary bi bi-pencil-fill" onclick="openEditModal({{ todo.id }}, '{{ todo.title }}', '{{ todo.description }}')"></button>
                     <a class="btn btn-danger bi bi-trash-fill" href="/remove?id={{todo.id}}"></a>
                 </td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <ul>
+    <div id="todo-add">
+        <form action="/add" method="post">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description">
+            <input type="submit" value="Add">
+        </form>
+    </div>
 
-    </ul>
-    <form action="/add" method="post">
-        <label for="todo">Add Todo</label>
-        <input type="text" name="title" id="title">
-        <label for="description">Description</label>
-        <input type="text" name="description" id="description">
-        <input type="submit" value="Add">
-    </form>
     <form action="/logout" method="post">
         <input type="submit" value="Logout">
     </form>
-
-    <!-- Edit Model for Todo Bootstrap -->
-    <div class="modal" id="edit-todo-modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </body>
 

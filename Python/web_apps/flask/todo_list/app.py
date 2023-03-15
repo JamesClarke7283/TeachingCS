@@ -107,6 +107,7 @@ def logout():
     flash('Logged out successfully.')
     return redirect(url_for('index'))
 
+
 @app.route('/add', methods=['GET', 'POST'])
 @login_required
 def add():
@@ -134,17 +135,22 @@ def delete():
     return redirect(url_for('dashboard'))
 
 
-@app.route('/edit', methods=['GET', 'POST'])
+@app.route('/edit', methods=['POST'])
 @login_required
 def edit():
-    id = request.args.get('id')
-    new_title = request.args.get['title']
-    session = Session()
-    todo = session.query(Todo).filter_by(id=id).first()
-    todo.title = new_title
-    session.commit()
-    session.close()
+    if request.method == 'POST':
+        id = request.form['id']
+        print(id)
+        new_title = request.form['title']
+        new_description = request.form['description']
+        session = Session()
+        todo = session.query(Todo).filter_by(id=id).first()
+        todo.title = new_title
+        todo.description = new_description
+        session.commit()
+        session.close()
     return redirect(url_for('dashboard'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)
