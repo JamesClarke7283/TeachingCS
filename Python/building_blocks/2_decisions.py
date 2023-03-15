@@ -22,6 +22,8 @@ else:
 
 # Match statement
 # You can use match statement in Python 3.10
+# A match statement is like a switch statement in other languages, but it is more powerful.
+# It can be used to match a variable against multiple patterns.
 match my_int:
     case 5:
         print("my_int is equal to 5")

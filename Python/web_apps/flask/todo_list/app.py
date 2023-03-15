@@ -113,7 +113,9 @@ def add():
     if request.method == 'POST':
         session = Session()
         id = session.query(User).filter_by(username=current_user.username).first().id
-        todo = Todo(title=request.form['title'], description="", user_id=id)
+        title = request.form['title']
+        description = request.form['description']
+        todo = Todo(title=title, description=description, user_id=id)
         session.add(todo)
         session.commit()
         session.close()
@@ -127,6 +129,19 @@ def delete():
     session = Session()
     todo = session.query(Todo).filter_by(id=id).first()
     session.delete(todo)
+    session.commit()
+    session.close()
+    return redirect(url_for('dashboard'))
+
+
+@app.route('/edit', methods=['GET', 'POST'])
+@login_required
+def edit():
+    id = request.args.get('id')
+    new_title = request.args.get['title']
+    session = Session()
+    todo = session.query(Todo).filter_by(id=id).first()
+    todo.title = new_title
     session.commit()
     session.close()
     return redirect(url_for('dashboard'))
