@@ -33,7 +33,7 @@
                 </th>
                 <td>{{todo.description}}</td>
                 <td>
-                    <button class="btn btn-primary bi bi-pencil-fill" onclick="openEditModal({{ todo.id }}, '{{ todo.title }}', '{{ todo.description }}')"></button>
+                    <button class="btn btn-primary bi bi-pencil-fill" onclick="openEditModal({{ todo.id }}, '{{ todo.title }}', '{{ todo.description }}');"></button>
                     <a class="btn btn-danger bi bi-trash-fill" href="/remove?id={{todo.id}}"></a>
                 </td>
             </tr>

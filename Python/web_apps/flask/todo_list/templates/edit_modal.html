@@ -10,11 +10,11 @@
             <div class="modal-body">
                 <!-- Make a form in bootstrap that takes a title and a description-->
                 <form action="/edit" method="post" id="edit-todo-form">
-                    <input type="hidden" name="id" id="id">
+                    <input id="edit-todo-id" type="hidden" name="id" id="id">
                     <label class="form-label" for="title">Title</label>
-                    <input class="form-control" type="text" name="title" id="title">
+                    <input id="edit-todo-title" class="form-control" type="text" name="title" id="title">
                     <label class="form-label" for="description">Description</label>
-                    <input class="form-control" type="text" name="description" id="description">
+                    <input id="edit-todo-description" class="form-control" type="text" name="description" id="description">
                     <button class="btn btn-primary" type="submit" id="edit-todo-submit">Edit</button>
                 </form>
             </div>

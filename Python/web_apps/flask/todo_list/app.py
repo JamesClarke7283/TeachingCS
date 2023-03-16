@@ -17,6 +17,7 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
+
 # Define User model
 class User(UserMixin, Base):
     __tablename__ = 'users'

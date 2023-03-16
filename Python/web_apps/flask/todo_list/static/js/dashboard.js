@@ -3,7 +3,7 @@
 // the post request uses raw values not json
 function openEditModal(id, title, description) {
     // Populate the form with the current todo's data
-    document.getElementById('edit-todo-form').action = `/edit?id=${id}`;
+    document.getElementById('edit-todo-id').value = id;
     document.getElementById('edit-todo-title').value = title;
     document.getElementById('edit-todo-description').value = description;
 
