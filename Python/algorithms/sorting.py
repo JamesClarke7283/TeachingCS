@@ -4,12 +4,12 @@
     - Insertion Sort
     - Quick Sort
     Description:
-        Bubble Sort:
+        Bubble Sort: 
             - Time Complexity: O(n^2)
         Insertion Sort:
             - Time Complexity: O(n^2)
         Quick Sort:
-            - Time Complexity: O(n log n)
+            - Time Complexity: O(n log n) 
 """
 
 
