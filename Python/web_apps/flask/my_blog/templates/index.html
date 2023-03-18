@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blog</title>
+    {% include "libraries.html" %}
+</head>
+
+<body>
+    <h1>My Blog</h1>
+    {% include "menu.html" %}
+    <ul>
+        {% for post in posts %}
+        <li>
+            <a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>

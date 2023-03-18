@@ -52,7 +52,7 @@ class TunaAndSpices(FoodDish):
 
 def main():
     """Main function"""
-    tas = TunaAndSpices(10)
+    tas = TunaAndSpices(5)
     print(tas)
 
 
