@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import UserMixin, LoginManager, login_user, login_required, logout_user, current_user
+from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from werkzeug.security import check_password_hash, generate_password_hash
 
 
@@ -13,12 +13,16 @@ from werkzeug.security import check_password_hash, generate_password_hash
 """
 
 app = Flask(__name__)
-
+app.secret_key = 'secret key'
 # Configure the database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
 
 # Create the database object
 db = SQLAlchemy(app)
+
+# Create login manager
+login_manager = LoginManager()
+login_manager.init_app(app)
 
 # Create the database model
 
@@ -46,32 +50,43 @@ class Comment(db.Model):
     content = db.Column(db.Text, nullable=False)
 
 
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.filter_by(id=user_id).first()
+
+
 @app.route('/')
 def index():
     blog_posts = db.session.query(BlogPost).all()
-    return render_template('index.html', posts=blog_posts)
+    return render_template('index.html', posts=blog_posts, current_user=current_user)
 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    username = request.form['username']
-    password = request.form['password']
-    user = User(username=username, password=generate_password_hash(password))
-    db.session.add(user)
-    db.session.commit()
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        if username != '' and password != '':
+            user = User(username=username, password=generate_password_hash(password))
+            db.session.add(user)
+            db.session.commit()
+            flash('Registered successfully.', category='success')
+        else:
+            flash('Please enter a username and password.', category='error')
     return render_template('register.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    username = request.form['username']
-    password = request.form['password']
-    user = User.query.filter_by(username=username).first()
-    if user and check_password_hash(user.password, password):
-        login_user(user)
-        return redirect(url_for('index'))
-    else:
-        flash('Invalid username or password.')
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        user = User.query.filter_by(username=username).first()
+        if user and check_password_hash(user.password, password):
+            login_user(user)
+            return redirect(url_for('index'))
+        else:
+            flash('Invalid username or password.', category="error")
     return render_template('login.html')
 
 
@@ -81,6 +96,51 @@ def logout():
     logout_user()
     flash('Logged out successfully.')
     return redirect(url_for('index'))
+
+
+@app.route('/new_post', methods=['GET', 'POST'])
+@login_required
+def new_post():
+    title = request.form['title']
+    content = request.form['content']
+    author_id = current_user.id
+    post = BlogPost(title=title, content=content, author_id=author_id)
+    db.session.add(post)
+    db.session.commit()
+    return redirect(url_for('index'))
+
+
+@app.route('/post/<int:post_id>', methods=['GET', 'POST'])
+def post(post_id):
+    post = BlogPost.query.filter_by(id=post_id).first()
+    comments = Comment.query.filter_by(post_id=post_id).all()
+    return render_template('post.html', post=post, comments=comments, current_user=current_user, User=User)
+
+
+@app.route('/delete_post/<int:post_id>', methods=['GET', 'POST'])
+@login_required
+def delete_post(post_id):
+    post = BlogPost.query.filter_by(id=post_id).first()
+    if post.author_id == current_user.id:
+        db.session.delete(post)
+        db.session.commit()
+    return redirect(url_for('index'))
+
+
+@app.route("/new_comment", methods=['GET', 'POST'])
+def new_comment():
+    post_id = None
+    if request.method == 'POST':
+        post_id = request.form['post_id']
+        content = request.form['content']
+        author_id = current_user.id
+        comment = Comment(post_id=post_id, content=content, author_id=author_id)
+        db.session.add(comment)
+        db.session.commit()
+    else:
+        post_id = request.args.get("post_id")
+    return redirect(url_for('post', post_id=post_id))
+
 
 if __name__ == "__main__":
     with app.app_context():

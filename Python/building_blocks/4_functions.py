@@ -5,7 +5,7 @@
 
 # Function definition
 # Type hinting is optional, but recommended
-def greeting(name : str):
+def greeting(name: str):
     return "Hello " + str(name)
 
 # Function call

@@ -14,3 +14,4 @@ class Person:
 
 # Object creation
 person1 = Person("John", 36)
+person1.greeting()

@@ -9,6 +9,8 @@
 <body>
     <h1>My Blog</h1>
     {% include "menu.html" %}
+    <h2>Posts</h2>
+    {% include "new_post_modal.html" %}
     <ul>
         {% for post in posts %}
         <li>

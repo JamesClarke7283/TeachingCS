@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog - {{post.title}}</title>
+    {% include "libraries.html" %}
+</head>
+
+<body>
+    <h1>My Blog</h1>
+    {% include "menu.html" %} {% include "flashed_messages.html" %}
+    <!-- Delete post button -->
+    <form action="/delete_post/{{post.id}}" method="post">
+        <input class="btn btn-danger" type="submit" value="Delete">
+    </form>
+    <h2>{{post.title}}</h2>
+    <p>{{post.content}}</p>
+    <br>
+    <h2>Comments</h2>
+    {% for comment in comments %}
+    <h3>{{ User.query.filter_by(id=comment.id).first().username }}</h3>
+    <p>{{ comment.content }}</p>
+    {% endfor %}
+    <h2>New Comment</h2>
+    <form action="/new_comment" method="post">
+        <input type="hidden" name="post_id" value="{{post.id}}">
+        <label class="form-label" for="content">Content</label>
+        <!-- Text area for content -->
+        <textarea class="form-control" name="content" id="content" cols="30" rows="10"></textarea>
+        <input class="btn btn-primary" type="submit" value="Comment">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{% block new_post_modal %}
+<!-- Edit Model for Todo Bootstrap -->
+<div class="modal" id="new-post-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">New Post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Make a form in bootstrap that takes a title and a description-->
+                <form action="/new_post" method="post" id="add-post-form">
+                    <label class="form-label" for="title">Title</label>
+                    <input id="new-post-title" class="form-control" type="text" name="title" id="title">
+                    <label class="form-label" for="content">Content</label>
+                    <!-- Large text area for new-post-content-->
+                    <textarea id="new-post-content" class="form-control" type="text" name="content" id="content" rows="5"></textarea>
+                    <button class="btn btn-primary" type="submit" id="new_post-submit">Post</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
