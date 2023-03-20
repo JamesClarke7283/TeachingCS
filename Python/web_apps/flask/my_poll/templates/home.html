@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Poll - Main Page</title>
+    {% include "libraries.html" %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-center">
+        <h1>My Poll</h1>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button onclick="openNewPollModal();" class="btn btn-primary">New poll</button> {% include "new_poll_modal.html" %}
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <ul>
+            {% for poll in polls %}
+            <li>
+                <a href="/poll/{{poll.id}}">{{ poll.question }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+
+</body>

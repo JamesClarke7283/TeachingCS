@@ -128,6 +128,7 @@ def delete_post(post_id):
 
 
 @app.route("/new_comment", methods=['GET', 'POST'])
+@login_required
 def new_comment():
     post_id = None
     if request.method == 'POST':

@@ -1,0 +1,77 @@
+{% block new_poll_modal %}
+<!-- Edit Model for Todo Bootstrap -->
+<div class="modal" id="new-poll-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">New Poll</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div id="new-poll">
+                                <form action="/new_poll" method="post" id="add-poll-form">
+                                    <label class="form-label" for="title">Title</label>
+                                    <input id="new-poll-title" class="form-control" type="text" name="title" id="title">
+                                    <button class="btn btn-primary" type="submit" id="new-poll-submit">Post</button>
+                                </form>
+                            </div>
+                            {% if request.cookies.get("poll_id") %}
+                            <div class="carousel-item">
+                                <h2>New Option</h2>
+                                <form action="/new_option" method="post" id="add-option-form">
+                                    <input type="hidden" name="poll_id" value='{{ request.cookies.get("poll_id") }}'>
+                                    <label class="form-label" for="answer">Answer</label>
+                                    <input id="new-poll-answer" class="form-control" type="text" name="answer" id="answer">
+                                    <button class="btn btn-primary" type="submit" id="new-option-submit">Post</button>
+                                </form>
+                                {% if options %}
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Answer</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for option in options %}
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <a class="btn btn-danger bi bi-trash-fill" href="/remove_option?id={{option.id}}"></a>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+
+                                    </tbody>
+                                </table>
+                                {% endif %}
+
+                            </div>
+                            {% endif %}
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Make a form in bootstrap that takes a title and a description-->
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon btn btn-primary" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
