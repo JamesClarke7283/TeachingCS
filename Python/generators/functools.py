@@ -8,6 +8,6 @@ def f(num):
 
 
 #s = list(map(f, l))
-s = list(functools.reduce(f ,l))
+s = list(functools.reduce(f,l))
  # filter,map
 print(s)
