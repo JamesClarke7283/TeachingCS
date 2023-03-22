@@ -38,7 +38,7 @@ class FoodDish:
         self.__ingredients = ingredients
 
     def __repr__(self):
-        output = f"{self.name} - {self.price}:"
+        output = f"{self.name} - Price: ${self.price}:"
         output += "\n\tIngredients:"
         for ingredient in self.__ingredients:
             output += f"\n-\t{ingredient}"
