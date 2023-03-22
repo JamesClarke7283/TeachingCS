@@ -49,17 +49,38 @@ class TunaAndSpices(FoodDish):
     def __init__(self, price: float):
         super().__init__("Tuna with Spices", price, ["Tuna Fish", "Spices"])
 
-class FishAndChips(FoodDish):
-    def __init__(self, price: float, ingredients: list[str], waiter):
-        super().__init__("Fish and Chips", price, ingredients)
-        self.__waiter: str = waiter
 
+class FishAndChips(FoodDish):
+    def __init__(self, price: float, added_ingredients: list[str], waiter_name):
+        ingredients = ["Fish", "Chips"]
+        ingredients.extend(added_ingredients)
+        super().__init__("Fish and Chips", price, ingredients)
+        self.__waiter: str = waiter_name
+
+    @property
+    def waiter_name(self):
+        return self.__waiter
+
+    @waiter_name.setter
+    def waiter_name(self, waiter_name: str):
+        # Checks if waiter name is in title case
+        if waiter_name == waiter_name.title():
+            self.__waiter = waiter_name
+        else:
+            raise ValueError("Waiter name must be in title case")
+
+    def __repr__(self):
+        output = super().__repr__()
+        output += f"\n\tWaiter: {self.waiter_name}"
+        return output
 
 
 def main():
     """Main function"""
     tas = TunaAndSpices(5)
+    fas = FishAndChips(4, ["Salt", "Pepper"], "John")
     print(tas)
+    print(fas)
 
 
 if __name__ == "__main__":
