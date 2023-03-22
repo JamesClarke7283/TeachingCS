@@ -49,6 +49,12 @@ class TunaAndSpices(FoodDish):
     def __init__(self, price: float):
         super().__init__("Tuna with Spices", price, ["Tuna Fish", "Spices"])
 
+class FishAndChips(FoodDish):
+    def __init__(self, price: float, ingredients: list[str], waiter):
+        super().__init__("Fish and Chips", price, ingredients)
+        self.__waiter: str = waiter
+
+
 
 def main():
     """Main function"""
