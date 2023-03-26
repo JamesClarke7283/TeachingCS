@@ -17,6 +17,13 @@ def reversecase(string):
     return input_str
 
 
+def startend_upper(string):
+    string = list(string.lower())
+    string[0] = string[0].upper()
+    string[-1] = string[-1].upper()
+    return ''.join(string)
+
+
 class TestStringMethods(unittest.TestCase):
     def test_normal(self):
         self.assertEqual("TeSt", zebracase("test"))
@@ -31,3 +38,7 @@ class TestStringMethods(unittest.TestCase):
 class TestReverseCase(unittest.TestCase):
     def test_normal(self):
         self.assertEqual("What", reversecase("tahW"))
+
+class TestStartEndUpper(unittest.TestCase):
+    def test_normal(self):
+        self.assertEqual("PizzA", startend_upper("pizza"))
