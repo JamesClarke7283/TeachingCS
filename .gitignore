@@ -4,6 +4,7 @@
 .idea
 __pycache__
 .projectile
+.vscode
 target
 Cargo.lock
 venv
