@@ -1,5 +1,5 @@
 import unittest
-"""Unit testing is where you testware in components called units, you test each unit using a testing framework.
+"""Unit testing is where you test software in components called units, you test each unit using a testing framework.
 """
 
 
@@ -10,6 +10,7 @@ def zebracase(string):
             new_str[index] = string[index].upper()
     new_str = "".join(new_str)
     return new_str
+
 
 def reversecase(string):
     input_str = string[::-1]
@@ -25,8 +26,8 @@ class TestStringMethods(unittest.TestCase):
 
     def test_extreme(self):
         self.assertEqual("PnEuMoNoUlTrAmIcRoScOpIcSiLiCoVoLcAnOcOnIoSiS", zebracase("pneumonoultramicroscopicsilicovolcanoconiosis"))
-        
+
+
 class TestReverseCase(unittest.TestCase):
     def test_normal(self):
         self.assertEqual("What", reversecase("tahW"))
-

@@ -4,23 +4,24 @@
 3. Peek: Return the top item of the stack
 """
 
+
 class Stack:
     def __init__(self):
         self.items = []
-    
+
     def push(self, item):
         self.items.append(item)
-    
+
     def pop(self):
         try:
             item = self.items.pop()
             return item
         except IndexError:
             return None
-        
-    
+
     def peek(self):
         return self.items[-1]
+
 
 def main():
     s = Stack()
@@ -36,7 +37,7 @@ def main():
     lst.append(s.pop())
     lst.append(s.pop())
     print(lst)
-    
+
 
 if __name__ == "__main__":
     main()

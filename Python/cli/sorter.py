@@ -2,6 +2,7 @@ import sys
 
 numbers = sys.argv[1::]
 
+
 def check_list_type(lst):
     dictionary = {}
     for item in lst:
@@ -11,7 +12,8 @@ def check_list_type(lst):
             dictionary[type(item)] = 1
     return dictionary
 
-new_numbers = []  
+
+new_numbers = []
 
 # Convert the list of strings to a list of integers
 try:
@@ -27,4 +29,3 @@ except ValueError:
 for item in sorted(new_numbers):
     print(item, end=' ')
 print()
-
