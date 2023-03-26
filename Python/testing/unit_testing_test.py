@@ -11,6 +11,10 @@ def zebracase(string):
     new_str = "".join(new_str)
     return new_str
 
+def reversecase(string):
+    input_str = string[::-1]
+    return input_str
+
 
 class TestStringMethods(unittest.TestCase):
     def test_normal(self):
@@ -21,3 +25,8 @@ class TestStringMethods(unittest.TestCase):
 
     def test_extreme(self):
         self.assertEqual("PnEuMoNoUlTrAmIcRoScOpIcSiLiCoVoLcAnOcOnIoSiS", zebracase("pneumonoultramicroscopicsilicovolcanoconiosis"))
+        
+class TestReverseCase(unittest.TestCase):
+    def test_normal(self):
+        self.assertEqual("What", reversecase("tahW"))
+
