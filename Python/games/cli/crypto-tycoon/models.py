@@ -1,6 +1,6 @@
-from SQLalchemy import Column, Integer, String, Float, Boolean, ForeignKey
-from SQLalchemy.orm import relationship
-from SQLalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey
+from sqlalchemy.orm import relationship
+from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
@@ -9,7 +9,6 @@ class Account(Base):
     id = Column(Integer(), primary_key = True)
     name = Column(String(), nullable = False, unique = True)
     balance = Column(Float(), nullable = False, default = 0)
-    acquired_assets_id = Column(ForeignKey("acquired_assets.id"), nullable = False)
 
 class AquiredAsset(Base):
     __tablename__ = 'acquired_assets'

@@ -1,5 +1,6 @@
 from models import Base, Account
-from SQLalchemy import create_engine, sessionmaker
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 # Create a database engine, specify the database type and the path to the database file
 engine = create_engine('sqlite:///crypto_tycoon.db', echo=False)
 
@@ -13,7 +14,7 @@ Base.metadata.create_all(engine)
 def init_account(session, name="John Doe"):
     user = session.query(Account).filter_by(name=name).first()
     if user is None:
-        user = Account(name)
+        user = Account(name=name, balance=1000)
         session.add(user)
         session.commit()
     return user
