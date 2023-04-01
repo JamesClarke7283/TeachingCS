@@ -22,6 +22,7 @@ else:
 
 # Match statement
 # You can use match statement in Python 3.10 or higher.
+# A match statement lets you compare a variable against multiple patterns.
 # A match statement is like a switch statement in other languages, but it is more powerful.
 # It can be used to match a variable against multiple patterns.
 # The _ means "anything else". it is used as a default case.

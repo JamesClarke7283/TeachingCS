@@ -34,6 +34,7 @@ print(my_dict["name"])
 # Allows different data types.
 my_tuple = (1, 2, 3)
 
+# Constants are values that do not change.
 # Constants do not exist in Python,
 # but you can use all capital letters to indicate a constant variable.
 MY_CONSTANT = 5
