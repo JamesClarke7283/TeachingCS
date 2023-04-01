@@ -30,5 +30,5 @@ def custom_greeting(name, greeting="Hello"):
 
 
 name = "Sam"
-output = custom_greeting(name, greeting="Hi")
+output = custom_greeting(name)
 print(output)
