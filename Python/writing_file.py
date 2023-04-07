@@ -5,4 +5,11 @@ def write_names_to_file(names):
         for name in names:
             f.write(f"Your name is {name}\n")
 
-write_names_to_file(names)
+shopping_lst = ["Butt Cream (for James)", "Chicken", "Rice"]
+
+def write_items_to_file(shopping_lst):
+    with open("shopping_list.txt", "w") as l:
+        for item in shopping_lst:
+            l.write(f"{item}\n")
+
+write_items_to_file(shopping_lst)
