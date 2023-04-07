@@ -22,3 +22,15 @@ def count_up_to(max):
 counter = count_up_to(5)
 for i in counter:
     print(i)
+
+print()
+
+def count_down_to(min, initial_value = 10):
+    count = initial_value
+    while count >= min:
+        yield count
+        count -= 1
+
+counter = count_down_to(5, 10)
+for i in counter:
+    print(i)
