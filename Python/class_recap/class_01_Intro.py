@@ -24,6 +24,10 @@ static method:
     therefor we don't need to parse self,
     its ISOLATED from the rest of the class
 
+class method:
+    Class methods are methods that are not dependent on the instance of the class,
+    but on the class itself.
+
 decorators:
     A decorator is a special attribute you can apply to a method to change its functionality.
     For example. you could add a custom decorator like so
@@ -67,6 +71,13 @@ class Vehicle:
          its ISOLATED from the rest of the class """
         print("dddd")
 
+    @classmethod
+    def class_method(cls):
+        """ Class methods are methods that are not dependent on the instance of the class,
+            but on the class itself. """
+        print("class method")
+        cls.staticmethod()
+
     def get_name(self):
         return self.__name
 
@@ -75,6 +86,9 @@ class Vehicle:
 
     def set_name(self, name):
         self.__name = name
+
+    def __repr__(self) -> str:
+        return f"Vehicle({self.__n_wheels}, {self.__name})"
 
 
 # Vehicle.static_method()
@@ -89,7 +103,7 @@ class Car(Vehicle):
 
     def __init__(self, name):
         super().__init__(self.N_WHEELS, name)
-
+        
     def set_n_wheels(self, n_wheels):
         raise Exception("Number of wheels on a car needs to be 4")
     # set_n_wheels = property(doc='(!) Disallowed inherited: Car wheels need to be 4')
@@ -101,6 +115,7 @@ print(f"You have {car.get_n_wheels()} wheels on your Car, oops, better fix that"
 
 
 nissan = Car("Nissan Leaf")
+print(repr(nissan))
 # nissan.set_n_wheels(3)
 # print(nissan.get_n_wheels())
 nissan.static_method()
