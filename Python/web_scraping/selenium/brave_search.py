@@ -6,11 +6,7 @@ from selenium.webdriver.chrome.service import Service
 import json
 
 
-def search_brave(search_query):
-    service = Service()
-
-    # Initialize the WebDriver with the service object
-    driver = webdriver.Chrome(service=service)
+def search_brave(driver, search_query):
 
     driver.get('https://search.brave.com/')
 
@@ -50,6 +46,11 @@ def search_brave(search_query):
 
 
 def main():
+    service = Service()
+
+    # Initialize the WebDriver with the service object
+    driver = webdriver.Chrome(service=service)
+    
     search_query = 'Python'
     results = search_brave(search_query)
     print(json.dumps(results, indent=4))
