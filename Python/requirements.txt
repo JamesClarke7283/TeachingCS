@@ -4,3 +4,4 @@ requests
 SQLalchemy
 flask-login
 flask-sqlalchemy
+selenium
