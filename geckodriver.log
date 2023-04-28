@@ -1,0 +1,529 @@
+1682353288389	geckodriver	INFO	Listening on 127.0.0.1:50055
+1682353288969	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "49779" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2txnp4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682353290037	Marionette	INFO	Marionette enabled
+1682353290050	Marionette	INFO	Listening on port 34079
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:49779
+1682353291232	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2txnp4/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:49779/devtools/browser/3d1833a3-d02f-4fb6-b85e-862b889468bd
+1682353297889	Marionette	INFO	Stopped listening on port 34079
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new Error("IndexedDB: main/url-classifier-skip-urls getMetadata() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+1682692982594	geckodriver	INFO	Listening on 127.0.0.1:58065
+1682692983200	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "40583" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2MnhYU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682692983696	Marionette	INFO	Marionette enabled
+1682692983703	Marionette	INFO	Listening on port 43663
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:40583
+1682692984444	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2MnhYU/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+DevTools listening on ws://127.0.0.1:40583/devtools/browser/f5f39ee8-baff-4e8e-9bab-97308a57487d
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682692989011	Marionette	INFO	Stopped listening on port 43663
+1682693036734	geckodriver	INFO	Listening on 127.0.0.1:49155
+1682693037336	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "57703" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileP9BfV5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682693038406	Marionette	INFO	Marionette enabled
+1682693038425	Marionette	INFO	Listening on port 41463
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:57703
+1682693039891	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileP9BfV5/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+Exiting due to channel error.
+Exiting due to channel error.
+1682693055834	geckodriver	INFO	Listening on 127.0.0.1:54545
+1682693055938	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "52901" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezMtvwH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682693056477	Marionette	INFO	Marionette enabled
+1682693056484	Marionette	INFO	Listening on port 46325
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:52901
+1682693057255	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezMtvwH/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52901/devtools/browser/82037115-7cc2-429d-b932-e0cd58901633
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682693065013	Marionette	INFO	Stopped listening on port 46325
+1682693075293	geckodriver	INFO	Listening on 127.0.0.1:35685
+1682693076029	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "60581" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7jUjvY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682693077243	Marionette	INFO	Marionette enabled
+1682693077257	Marionette	INFO	Listening on port 41729
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:60581
+1682693078966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7jUjvY/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:60581/devtools/browser/e4338f65-0d30-48a0-b2a0-ba7d8f3772bf
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682693086492	Marionette	INFO	Stopped listening on port 41729
+1682694692861	geckodriver	INFO	Listening on 127.0.0.1:60861
+1682694692955	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "54751" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezd2T3p"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682694693482	Marionette	INFO	Marionette enabled
+1682694693487	Marionette	INFO	Listening on port 45513
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:54751
+1682694694268	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezd2T3p/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:54751/devtools/browser/ec91760f-f3da-417b-9c46-fafbdaf3f4fa
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682694808295	Marionette	INFO	Stopped listening on port 45513
+1682694849754	geckodriver	INFO	Listening on 127.0.0.1:44587
+1682694849846	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "37945" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNyJoGV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682694850342	Marionette	INFO	Marionette enabled
+1682694850346	Marionette	INFO	Listening on port 33387
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:37945
+1682694851135	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNyJoGV/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:37945/devtools/browser/f6759666-c1ef-48db-9929-c319bfa03136
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682694995807	Marionette	INFO	Stopped listening on port 33387
+1682694997014	geckodriver	INFO	Listening on 127.0.0.1:49471
+1682694997108	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "33277" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqocvli"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682694997645	Marionette	INFO	Marionette enabled
+1682694997651	Marionette	INFO	Listening on port 43949
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:33277
+1682694998466	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqocvli/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:33277/devtools/browser/5ab22379-abd8-45b5-af52-f9b2f8954564
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682695006220	Marionette	INFO	Stopped listening on port 43949
+1682695043804	geckodriver	INFO	Listening on 127.0.0.1:33389
+1682695043898	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "43637" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEhaSW3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695044396	Marionette	INFO	Marionette enabled
+1682695044402	Marionette	INFO	Listening on port 35311
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:43637
+1682695045232	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEhaSW3/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:43637/devtools/browser/dd6909d3-ec9e-4b8b-ba6d-b0f6ee0c5d34
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1682695128946	Marionette	INFO	Stopped listening on port 35311
+1682695130602	geckodriver	INFO	Listening on 127.0.0.1:48409
+1682695131214	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "56547" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEtrpW5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695131836	Marionette	INFO	Marionette enabled
+1682695131843	Marionette	INFO	Listening on port 34123
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:56547
+1682695132662	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEtrpW5/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:56547/devtools/browser/8a6a93d1-2419-47c7-bcc5-419ded9ef90f
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682695210286	geckodriver	INFO	Listening on 127.0.0.1:40321
+1682695210377	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "59399" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1IJ5Fc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695210901	Marionette	INFO	Marionette enabled
+1682695210908	Marionette	INFO	Listening on port 39897
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:59399
+1682695211796	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1IJ5Fc/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:59399/devtools/browser/e1b8f612-0d34-4d5d-83e1-5cc43632cb26
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1682695217288	Marionette	INFO	Stopped listening on port 34123
+1682695235489	Marionette	INFO	Stopped listening on port 39897
+1682695245023	geckodriver	INFO	Listening on 127.0.0.1:37519
+1682695245120	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "41771" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepElmeL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695245597	Marionette	INFO	Marionette enabled
+1682695245604	Marionette	INFO	Listening on port 45525
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:41771
+1682695246368	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepElmeL/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:41771/devtools/browser/93cefb03-2f22-4f3a-a19b-31387b69eedb
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682695254646	Marionette	INFO	Stopped listening on port 45525
+1682695263060	geckodriver	INFO	Listening on 127.0.0.1:38347
+1682695263201	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "41933" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileI9pwld"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695264364	Marionette	INFO	Marionette enabled
+1682695264374	Marionette	INFO	Listening on port 43329
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:41933
+1682695265855	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileI9pwld/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:41933/devtools/browser/bb0aedac-dac6-4635-ac44-5470584bd23c
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682695274014	Marionette	INFO	Stopped listening on port 43329
+1682695287476	geckodriver	INFO	Listening on 127.0.0.1:50585
+1682695287576	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "50199" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilee5E0HZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695288090	Marionette	INFO	Marionette enabled
+1682695288099	Marionette	INFO	Listening on port 40767
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:50199
+1682695288872	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilee5E0HZ/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:50199/devtools/browser/7e92d60f-5fec-4fe5-994c-d9a0332b14d0
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1682695494180	Marionette	INFO	Stopped listening on port 40767
+1682695495432	geckodriver	INFO	Listening on 127.0.0.1:45639
+1682695495514	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "39665" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSHVYTR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695496051	Marionette	INFO	Marionette enabled
+1682695496060	Marionette	INFO	Listening on port 39417
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:39665
+1682695496859	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSHVYTR/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:39665/devtools/browser/9b585ce6-bc24-4fdb-8691-ea7a760c20c7
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1682695653054	geckodriver	INFO	Listening on 127.0.0.1:33885
+1682695653186	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "45857" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileIibdCw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695653720	Marionette	INFO	Marionette enabled
+1682695653726	Marionette	INFO	Listening on port 42217
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:45857
+1682695654467	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIibdCw/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:45857/devtools/browser/6920996a-f259-4f84-bc0f-b6d76ff624ff
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682695674378	Marionette	INFO	Stopped listening on port 42217
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1682695678532	Marionette	INFO	Stopped listening on port 39417
+1682695707665	geckodriver	INFO	Listening on 127.0.0.1:59471
+1682695707821	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "37115" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiletAe0oA"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695708821	Marionette	INFO	Marionette enabled
+1682695708835	Marionette	INFO	Listening on port 36021
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:37115
+1682695710265	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletAe0oA/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:37115/devtools/browser/4e40f73c-e983-4f6e-adce-f5ee017d3334
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1682695886087	geckodriver	INFO	Listening on 127.0.0.1:34387
+1682695886198	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "53949" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRuNrT3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682695886739	Marionette	INFO	Marionette enabled
+1682695886745	Marionette	INFO	Listening on port 43549
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:53949
+1682695887545	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRuNrT3/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53949/devtools/browser/98138f65-6445-473d-b056-c33958aa074b
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682695896625	Marionette	INFO	Stopped listening on port 43549
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1682695934100	Marionette	INFO	Stopped listening on port 36021
+1682696117197	geckodriver	INFO	Listening on 127.0.0.1:59533
+1682696117287	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "49835" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileB63LZh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682696117812	Marionette	INFO	Marionette enabled
+1682696117818	Marionette	INFO	Listening on port 33911
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:49835
+1682696118634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new MissingSignatureError("Missing signature (main/anti-tracking-url-decoration)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileB63LZh/search.json.mozlz4", (void 0)))
+console.error: (new MissingSignatureError("Missing signature (main/hijack-blocklists)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/addons-manager-settings)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-telemetry-v2)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/search-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/top-sites)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-providers)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:49835/devtools/browser/f60534f9-8ab1-49ce-b23c-565efe5bc753
+console.error: (new MissingSignatureError("Missing signature (main/url-classifier-skip-urls)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+console.error: (new MissingSignatureError("Missing signature (main/doh-config)", "resource://services-settings/RemoteSettingsClient.sys.mjs", 172))
+1682696128484	Marionette	INFO	Stopped listening on port 33911
