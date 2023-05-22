@@ -5,3 +5,8 @@ SQLalchemy
 flask-login
 flask-sqlalchemy
 selenium
+tensorflow
+scikit-learn
+numpy
+matplotlib
+pandas

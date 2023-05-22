@@ -8,5 +8,6 @@ __pycache__
 target
 Cargo.lock
 venv
-*.db
 .ipynb_checkpoints
+.venv
+*.db
