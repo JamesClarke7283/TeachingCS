@@ -1,5 +1,5 @@
 [workspace]
 
 members = [
-    "shopping_list",
+    "shopping_list", "age_check","calculator"
 ]
