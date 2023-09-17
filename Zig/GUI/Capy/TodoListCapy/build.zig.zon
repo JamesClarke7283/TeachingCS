@@ -1,0 +1,10 @@
+.{
+    .name = "guess-the-number",
+    .version = "0.0.0",
+    .dependencies = .{
+        .capy = .{
+            .url = "https://github.com/capy-ui/capy/archive/a2be8c8bc87d522c3329406ec6d0e80b59f7ccb8.tar.gz",
+            .hash = "1220406249366af87d110f791157cc89a356264557dfbd22804faf03a3be6b3291df",
+        },
+    },
+}
